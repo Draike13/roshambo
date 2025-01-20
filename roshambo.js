@@ -2,7 +2,7 @@ let computerChoice;
 
 // common random number function simplified
 function computerNumber() {
-  return (computerChoice = Math.floor(Math.random() * (3 - 1 + 1)) + 1);
+  return (computerChoice = Math.floor(Math.random() * 3) + 1);
 }
 //mega function for roshambo
 function result(choice) {
