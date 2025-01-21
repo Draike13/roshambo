@@ -1,0 +1,36 @@
+.rock-button {
+  width: 12rem;
+  height: 10rem;
+  background-color: rgb(167, 71, 15);
+  font-size: 2.5rem;
+  color: white;
+  border-radius: 1rem;
+  border-width: 1rem;
+}
+.rock-button:hover {
+  cursor: pointer;
+}
+.paper-button {
+  width: 12rem;
+  height: 10rem;
+  background-color: whitesmoke;
+  font-size: 2.5rem;
+  color: black;
+  border-radius: 1rem;
+  border-width: 1rem;
+}
+.paper-button:hover {
+  cursor: pointer;
+}
+.scissors-button {
+  width: 12rem;
+  height: 10rem;
+  background-color: blueviolet;
+  font-size: 2.5rem;
+  color: white;
+  border-radius: 1rem;
+  border-width: 1rem;
+}
+.scissors-button:hover {
+  cursor: pointer;
+}
