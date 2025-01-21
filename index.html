@@ -8,8 +8,12 @@
     <script src="roshambo.js"></script>
   </head>
   <body>
-    <button class="rock-button" onclick="computerNumber();choice();result(1);">rock</button>
-    <button class="paper-button" onclick="computerNumber();choice();result(2)">paper</button>
-    <button class="scissors-button" onclick="computerNumber();choice();result(3)">scissors</button>
+    <button class="rock-button" onclick="computerNumber();choice();result(1);updateStats(1)">rock</button>
+    <button class="paper-button" onclick="computerNumber();choice();result(2);updateStats(2)">paper</button>
+    <button class="scissors-button" onclick="computerNumber();choice();result(3);updateStats(3)">scissors</button>
+    <br /><br /><br />
+    <button onclick="showScoreboard()">Show Scores</button>
+    <br /><br />
+    <button onclick="displayStats()">Show My Stats</button>
   </body>
 </html>
