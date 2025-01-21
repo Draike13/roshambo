@@ -1,6 +1,7 @@
 let computerChoice;
 let pcHand;
 //alert response function
+
 function choice() {
   if (computerChoice === 1) {
     pcHand = 'Rock';
