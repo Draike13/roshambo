@@ -8,12 +8,16 @@
     <script src="roshambo.js"></script>
   </head>
   <body>
-    <button class="rock-button" onclick="computerNumber();choice();result(1);updateStats(1)">rock</button>
-    <button class="paper-button" onclick="computerNumber();choice();result(2);updateStats(2)">paper</button>
-    <button class="scissors-button" onclick="computerNumber();choice();result(3);updateStats(3)">scissors</button>
+    <header class="header">Welcome to the game</header>
+    <div class="game-container">
+      <button class="rock-button game-button" onclick="buttonPress(1)">rock</button>
+      <button class="paper-button game-button" onclick="buttonPress(2)">paper</button>
+      <button class="scissors-button game-button" onclick="buttonPress(3)">scissors</button>
+    </div>
     <br /><br /><br />
-    <button onclick="showScoreboard()">Show Scores</button>
-    <br /><br />
-    <button onclick="displayStats()">Show My Stats</button>
+    <div class="option-container">
+      <button class="option-button" onclick="showScoreboard()">Scores</button>
+      <button class="option-button" onclick="displayStats()">Stats</button>
+    </div>
   </body>
 </html>

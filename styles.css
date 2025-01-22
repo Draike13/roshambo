@@ -1,36 +1,66 @@
+body {
+  background-color: grey;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.game-button {
+  width: 12rem;
+  height: 10rem;
+  border-radius: 1rem;
+  border-width: 1rem;
+  font-size: 2.5rem;
+}
+
 .rock-button {
-  width: 12rem;
-  height: 10rem;
   background-color: rgb(167, 71, 15);
-  font-size: 2.5rem;
   color: white;
-  border-radius: 1rem;
-  border-width: 1rem;
 }
-.rock-button:hover {
-  cursor: pointer;
-}
+
 .paper-button {
-  width: 12rem;
-  height: 10rem;
   background-color: whitesmoke;
-  font-size: 2.5rem;
   color: black;
-  border-radius: 1rem;
-  border-width: 1rem;
 }
-.paper-button:hover {
-  cursor: pointer;
-}
+
 .scissors-button {
-  width: 12rem;
-  height: 10rem;
   background-color: blueviolet;
-  font-size: 2.5rem;
   color: white;
-  border-radius: 1rem;
-  border-width: 1rem;
 }
-.scissors-button:hover {
-  cursor: pointer;
+.option-button {
+  background-color: goldenrod;
+  font-size: 1.75rem;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border-width: 0.5rem;
+}
+.game-container {
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-container {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  display: flex;
+  justify-content: space-between;
 }

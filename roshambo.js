@@ -49,6 +49,7 @@ function result(choice) {
 //scoreboard display function
 
 function showScoreboard() {
+  getInfo();
   alert(`You currently have ${scoreboard.wins} WINS, ${scoreboard.draws} DRAWS, and ${scoreboard.loses} LOSES.`);
 }
 
@@ -64,5 +65,29 @@ function updateStats(selector) {
   }
 }
 function displayStats() {
+  getInfo();
   alert(`You've used ROCK ${stats.rock} times, PAPER ${stats.paper} times, and SCISSORS ${stats.scissors} times.`);
+}
+
+//set local function group
+
+function saveInfo() {
+  localStorage.setItem('stats', JSON.stringify(stats));
+  localStorage.setItem('scores', JSON.stringify(scoreboard));
+}
+
+function getInfo() {
+  stats = JSON.parse(localStorage.getItem('stats'));
+  scoreboard = JSON.parse(localStorage.getItem('scores'));
+}
+
+//button press function for refactoring
+
+function buttonPress(buttonNumber) {
+  getInfo();
+  computerNumber();
+  choice();
+  result(buttonNumber);
+  updateStats(buttonNumber);
+  saveInfo();
 }
