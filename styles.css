@@ -18,6 +18,8 @@ body {
 
 button:hover {
   cursor: pointer;
+  transform: scale(1.02);
+  filter: brightness(0.8);
 }
 
 .game-button {
@@ -69,6 +71,8 @@ button:hover {
   margin-top: 3rem;
   width: 12rem;
   height: 5rem;
-  position: relative;
-  left: 35%;
+}
+.new-game-container {
+  display: flex;
+  justify-content: center;
 }
