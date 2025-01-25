@@ -91,3 +91,13 @@ function buttonPress(buttonNumber) {
   updateStats(buttonNumber);
   saveInfo();
 }
+
+function saveQuick() {
+  scoreboard.draws = 0;
+  scoreboard.loses = 0;
+  scoreboard.wins = 0;
+  stats.paper = 0;
+  stats.rock = 0;
+  stats.scissors = 0;
+  saveInfo();
+}
